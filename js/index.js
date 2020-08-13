@@ -1,6 +1,8 @@
 // Your code goes here
 
 // mouseover 1
+// mouseleave
+// dblclick
 // Header Logo
 const hLogo = document.querySelector(".logo-heading");
 
@@ -113,6 +115,10 @@ Btn1.forEach((a) => {
   a.addEventListener("mouseleave", () => {
     a.style.color = "violet";
     console.log(a, "mouse leave");
+  });
+  a.addEventListener("dblclick", () => {
+    a.remove();
+    console.log(a, "remove double click");
   });
 });
 
